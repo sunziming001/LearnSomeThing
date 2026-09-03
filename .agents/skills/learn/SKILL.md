@@ -1,7 +1,6 @@
 ---
 name: learn
-description: 按 ICAP 框架逐个知识点学习一本书，校验笔记、引导建构，并累加笔记与进度。
-disable-model-invocation: true
+description: 按 ICAP 框架逐个知识点学习一本书，校验笔记、引导建构，并累加笔记与进度。用户要学习、继续学、复习一本书时触发。
 ---
 
 # learn

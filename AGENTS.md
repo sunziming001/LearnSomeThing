@@ -12,7 +12,15 @@
 
 ## 技能
 
-- `/decode-book <书名>` — 把 PDF 转成 `base.md` 并拆分为知识点。用户要「解码 / 转换 / 拆解」一本书时用。
-- `/learn <书名>` — 按 ICAP 逐个知识点学习并记录笔记。用户要「学习 / 继续学 / 复习」一本书时用。
+技能定义在 `.agents/skills/`（Codex）和 `.cursor/skills/`（Cursor），内容一致。
+
+| 技能 | 作用 |
+|------|------|
+| `decode-book` | 把 PDF 转成 `base.md` 并拆分为知识点 |
+| `learn` | 按 ICAP 逐个知识点学习并记录笔记 |
+
+**Codex**：`$decode-book <书名>`、`$learn <书名>`，或直接说「解码《书名》」「继续学《书名》」。
+
+**Cursor**：`/decode-book <书名>`、`/learn <书名>`。
 
 流程：先 `decode-book`，再 `learn`。
